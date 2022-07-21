@@ -1,0 +1,53 @@
+
+#navbar+h1{
+    margin-bottom: 18px;
+}
+#container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: auto;
+	gap: 25px;
+    width: 96%;
+    margin:auto;
+}
+#container > div {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 14px;
+	border-radius: 10px;
+}
+#container>div>img {
+	width: 100%;
+	height: 60%;
+    margin-bottom: 15px;
+}
+#container>div>h4{
+    margin-bottom: 16px;
+    margin-left: 5px;
+}
+#container>div>h4 + p {
+	color: green;
+	text-decoration: line-through;
+	font-size: 18px;
+    margin-bottom: 5px;
+}
+#container>div>p + p {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+    margin-bottom: 17px;
+}
+#container>div>p {
+	margin-left: 5px;
+}
+#container>div>button{
+    display: flex;
+    margin: auto;
+    border:1px solid rgb(180, 120, 90);
+    font-size:15px;
+    font-weight: bold;
+    padding: 9px;
+    background-color: rgba(180, 120, 90, 0.3);
+}
+#container>div>button:hover{
+    cursor:pointer;
+}

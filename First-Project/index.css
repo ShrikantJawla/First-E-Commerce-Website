@@ -1,0 +1,94 @@
+/** @format */
+
+#firstCruiser {
+	margin: auto;
+	width: 90%;
+	height: 400px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	position: relative;
+}
+#firstCruiser div {
+	display: flex;
+	gap: 15px;
+}
+#firstCruiser img {
+	/* border:2px solid red; */
+	height: 65%;
+}
+#firstCruiser button {
+	position: absolute;
+	top: 44%;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(100, 100, 100, 0.4);
+	border: none;
+	font-size: 19px;
+	border-radius: 10px;
+}
+#leftBtn {
+	left: 15px;
+}
+#rightBtn {
+	right: 15px;
+}
+
+#secondCruiser {
+    display: flex;
+	margin: auto;
+	width: 88%;
+	height: auto;
+    padding: 40px 20px;
+	margin-top: 40px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    justify-content: space-around;
+	align-items: center;
+    position:relative;
+}
+#secondCruiser>div{
+    margin: auto;
+    display: flex;
+	gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+#secondCruiser>div>div{
+}
+#secondCruiser>div>div>img{
+    height: 75%;
+    width: 100%;
+}
+#secondCruiser button {
+	position: absolute;
+	top: 44%;
+	width: 60px;
+	height: 50px;
+	background-color: rgba(100, 100, 100, 0.4);
+	border: none;
+	font-size: 19px;
+	border-radius: 10px;
+}
+#scleftBtn {
+	left: 15px;
+}
+#scrightBtn {
+	right: 15px;
+}
+#secondCruiser>div>div>h5{
+    font-size: 18px;
+margin-left: 5px;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+#secondCruiser>div>div>h5+p{
+margin-left: 5px;
+    color: brown;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#secondCruiser>div>div>p+p{
+    margin-left: 5px;
+}

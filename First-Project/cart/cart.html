@@ -1,0 +1,69 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Cart Page</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="cart.css" />
+        <link rel="stylesheet" href="../navbar.css" />
+	</head>
+	<body>
+		<!-- //Navbar Starts here...-->
+		<div id="navbar">
+			<div>
+				<a href="../index.html"><h4>HOME</h4></a>
+				<a href="../men's/men's.html"><h4>MEN</h4></a>
+				<a href=""><h4>WOMEN</h4></a>
+				<a href=""><h4>KIDS</h4></a>
+				<a href=""><h4>HOME&LIVING</h4></a>
+			</div>
+			<input
+				type="text"
+				id="searchbar"
+				placeholder="Search anything you want to buy"
+			/>
+			<div id="navProfileDiv">
+				<a href=""><h4>WishList</h4></a>
+				<a href=""><h4>Cart</h4></a>
+			</div>
+		</div>
+		<!-- navbar ends here..... -->
+		<div id="sorting">
+			<div>
+				<p>Sort by Price</p>
+				<select name="" id="priceSorting">
+					<option value="empty">Select</option>
+					<option value="Low to High">Low to High</option>
+					<option value="High to Low">High to Low</option>
+				</select>
+			</div>
+		</div>
+		<hr />
+		<div id="container">
+			<div id="items"></div>
+			<div id="total">
+				<input
+					type="text"
+					name=""
+					id="coupon-code"
+					placeholder="get30 coupon-code"
+				/>
+				<button id="enterCoupon">Apply</button>
+				<div>
+					<h2>Total Price:- <span id="totalamount">0</span></h2>
+				</div>
+				<a href="paymentGatewayPage.html"
+					><button id="placeOrder">Place Order</button></a
+				>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="cart.js"></script>
+
