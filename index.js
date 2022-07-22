@@ -357,13 +357,13 @@ let image3 = document.querySelector("#image3");
 let image4 = document.querySelector("#image4");
 let image = 0;
 document.querySelector("#rightBtn").addEventListener("click", () => {
-if (image === mensData.length - 1) image = 0;
-image1.src = mensData[image++].image_url;
-if (image === mensData.length - 1) image = 0;
-image2.src = mensData[image++].image_url;
-if (image === mensData.length - 1) image = 0;
-image3.src = mensData[image++].image_url;
-if (image === mensData.length - 1) image = 0;
+	if (image === mensData.length - 1) image = 0;
+	image1.src = mensData[image++].image_url;
+	if (image === mensData.length - 1) image = 0;
+	image2.src = mensData[image++].image_url;
+	if (image === mensData.length - 1) image = 0;
+	image3.src = mensData[image++].image_url;
+	if (image === mensData.length - 1) image = 0;
 	image4.src = mensData[image++].image_url;
 });
 
@@ -382,14 +382,14 @@ document.querySelector("#leftBtn").addEventListener("click", () => {
 //Second cruiser starts here::----
 
 let scimg1 = document.querySelector("#sCruiserimg1");
-let scname1 = document.querySelector("#name1");;
-let scbrand1 = document.querySelector("#brand1");;
+let scname1 = document.querySelector("#name1");
+let scbrand1 = document.querySelector("#brand1");
 let scprice1 = document.querySelector("#price1");
 
 let scimg2 = document.querySelector("#sCruiserimg2");
-let scname2 = document.querySelector("#name2");;
-let scbrand2 = document.querySelector("#brand2");;
-let scprice2= document.querySelector("#price2");
+let scname2 = document.querySelector("#name2");
+let scbrand2 = document.querySelector("#brand2");
+let scprice2 = document.querySelector("#price2");
 
 let scimg3 = document.querySelector("#sCruiserimg3");
 let scname3 = document.querySelector("#name3");
@@ -449,7 +449,7 @@ document.querySelector("#scrightBtn").addEventListener("click", () => {
 	scname4.innerText = womenDataForCruiser2[count2++].name;
 	scbrand4.innerText = womenDataForCruiser2[count3++].brand;
 	scprice4.innerText = womenDataForCruiser2[count4++].price;
-})
+});
 
 document.querySelector("#scleftBtn").addEventListener("click", () => {
 	if (count1 === 0) {
@@ -497,7 +497,6 @@ document.querySelector("#scleftBtn").addEventListener("click", () => {
 	scprice4.innerText = womenDataForCruiser2[count4--].price;
 });
 
-
 //Here I defined when sign-in on navbar changes to name of the user:::-------sarts from here-----
 if (tempStaySignIn.length !== 0) {
 	let profileTag = document.getElementById("signInTag");
@@ -511,15 +510,38 @@ if (tempStaySignIn.length !== 0) {
 	document.getElementById("navProfileDiv").append(clickToSignOut);
 	clickToSignOut.addEventListener("click", () => {
 		deletetempStaySignIn(tempStaySignIn);
-	})
+	});
 }
 
 function deletetempStaySignIn(arr) {
-	arr.splice(0, 1); 
+	arr.splice(0, 1);
 	localStorage.setItem("remainSignIn", JSON.stringify(arr));
 	window.location.href = "index.html";
 }
 
 //Ends here------
 
+let fash = document.getElementById("fashion");
+fash.addEventListener("mouseover", (e) => {
+	document.querySelector(".fashion").classList.add("visible");
+	document.querySelector(".btnpop1").classList.add("visible1");
+});
+fash.addEventListener("mouseout", (e) => {
+	document.querySelector(".fashion").classList.remove("visible");
+	document.querySelector(".btnpop1").classList.remove("visible1");
+});
 
+let topWear = document.querySelector(".btn1");
+topWear.addEventListener("mouseover", (e) => {
+	document.querySelector(".btnpop1").classList.add("visible1");
+});
+topWear.addEventListener("mouseout", (e) => {
+	document.querySelector(".btnpop1").classList.remove("visible1");
+});
+let bottomWear = document.querySelector(".btn2");
+bottomWear.addEventListener("mouseover", (e) => {
+	document.querySelector(".btnpop2").classList.add("visible1");
+});
+bottomWear.addEventListener("mouseout", (e) => {
+	document.querySelector(".btnpop2").classList.remove("visible1");
+});
