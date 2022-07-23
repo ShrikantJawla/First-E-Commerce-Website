@@ -545,3 +545,270 @@ bottomWear.addEventListener("mouseover", (e) => {
 bottomWear.addEventListener("mouseout", (e) => {
 	document.querySelector(".btnpop2").classList.remove("visible1");
 });
+let bottomWear1 = document.querySelector(".btn3");
+bottomWear1.addEventListener("mouseover", (e) => {
+	document.querySelector(".btnpop3").classList.add("visible1");
+});
+bottomWear1.addEventListener("mouseout", (e) => {
+	document.querySelector(".btnpop3").classList.remove("visible1");
+});
+
+let Electronics = {
+	mobiles: [
+		"Mi",
+		"Realme",
+		"Samsung",
+		"Infinix",
+		"OPPO",
+		"Apple",
+		"Vivo",
+		"Honor",
+		"Asus",
+		"Poco X2",
+		"realme Narzo 10",
+		"Infinix Hot 10",
+		"IQOO",
+		"iPhone SE",
+		"Motrola razr",
+		"realme Narzo",
+		"Motorola g8 power lite"
+	],
+	mobile_accessories: [
+		"Mobie Cases",
+		"Headphone",
+		"Power Banks",
+		"Screengaurds",
+		"Memory Cards",
+		"Smart Headphones",
+		"Mobile Cables",
+		"Mobile Chargers",
+		"Mobile Holders"
+	],
+	smart_wearable: ["Smart watches", "Smart Glasses", "Smart bands"],
+	health_care: ["bp Monitores", "Weighing Scale"],
+	laptops: ["Gaming"],
+	desktop_PCs: [],
+	gamingAccessories: [],
+	computerAccessories: [
+		"External Hard Disks",
+		"Pendrives",
+		"Laptops Skins & Decals",
+		"Laptops Bags",
+		"Mouse"
+	],
+	coumputerPeripheral: ["Printers & Ink Cartridges", "Monitors"],
+	tablets: ["Apple iPods"],
+	speakers: [
+		"Home Audio Speakers",
+		"Home Theatres",
+		"Soundbars",
+		"Bluetooth Speakers",
+		"DTH Set Top Box"
+	],
+	smartHomeA: ["Google Nest"],
+	camera: ["DSLR & Mirrorless", "Compact & Bridge Cameras", "Sports & Action"],
+	cameraAcc: ["Lens", "Tripods"],
+	networkCom: ["Routers"],
+	featured: [
+		"Google Assistant Store",
+		"Laptops on Buyback Guarantee",
+		"Fliplart SmartBuy",
+		"Sony PS4 Pro & Slim",
+		"Apple Products",
+		"Microsoft Stores",
+		"Lenovo Phab Series",
+		"JBL Speakers",
+		"Smartphones on Buyback Guarantee",
+		"Phillips",
+		"Dr. Porepen",
+		"Complete Mobile Protection",
+		"Mobile No Cost EMI",
+		"Huawei Watch Gt 2e Smart Watch"
+	]
+};
+
+let mob = document.createElement("div");
+let nameH = document.createElement("p");
+nameH.innerText = "Mobiles >";
+nameH.style.color = "red";
+nameH.style.fontWeight = "700";
+mob.append(nameH);
+Electronics.mobiles.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	mob.append(anch);
+});
+let mobacc = document.createElement("div");
+let nameH2 = document.createElement("p");
+nameH2.innerText = "Mobiles Accessories >";
+nameH2.style.color = "red";
+nameH2.style.fontWeight = "700";
+mobacc.append(nameH2);
+Electronics.mobile_accessories.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	mobacc.append(anch);
+});
+let smartW = document.createElement("div");
+let nameH3 = document.createElement("p");
+nameH3.innerText = "Smart Wearable Tech >";
+nameH3.style.color = "red";
+nameH3.style.fontWeight = "700";
+smartW.append(nameH3);
+Electronics.smart_wearable.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	smartW.append(anch);
+});
+let healthC = document.createElement("div");
+let nameH4 = document.createElement("p");
+nameH4.innerText = "Health Care >";
+nameH4.style.color = "red";
+nameH4.style.fontWeight = "700";
+healthC.append(nameH4);
+Electronics.health_care.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	healthC.append(anch);
+});
+let lap = document.createElement("div");
+let nameH5 = document.createElement("p");
+nameH5.innerText = "Laptops >";
+nameH5.style.color = "red";
+nameH5.style.fontWeight = "700";
+lap.append(nameH5);
+Electronics.laptops.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	lap.append(anch);
+});
+let desktop = document.createElement("div");
+let nameH6 = document.createElement("p");
+nameH6.innerText = "Laptops >";
+nameH6.style.color = "red";
+nameH6.style.fontWeight = "700";
+desktop.append(nameH6);
+let gaminga = document.createElement("div");
+let nameH7 = document.createElement("p");
+nameH7.innerText = "Gaming Accessories >";
+nameH7.style.color = "red";
+nameH7.style.fontWeight = "700";
+gaminga.append(nameH7);
+
+let computera = document.createElement("div");
+let nameH8 = document.createElement("p");
+nameH8.innerText = "Computer Accessories >";
+nameH8.style.color = "red";
+nameH8.style.fontWeight = "700";
+computera.append(nameH8);
+Electronics.computerAccessories.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	computera.append(anch);
+});
+let computerp = document.createElement("div");
+let nameH9 = document.createElement("p");
+nameH9.innerText = "Computer Pheripheral >";
+nameH9.style.color = "red";
+nameH9.style.fontWeight = "700";
+computerp.append(nameH9);
+Electronics.coumputerPeripheral.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	computerp.append(anch);
+});
+let tab = document.createElement("div");
+let nameH10 = document.createElement("p");
+nameH10.innerText = "Tablets >";
+nameH10.style.color = "red";
+nameH10.style.fontWeight = "700";
+tab.append(nameH10);
+Electronics.tablets.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	tab.append(anch);
+});
+let speakers = document.createElement("div");
+let nameH11 = document.createElement("p");
+nameH11.innerText = "Speakers >";
+nameH11.style.color = "red";
+nameH11.style.fontWeight = "700";
+speakers.append(nameH11);
+Electronics.speakers.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	speakers.append(anch);
+});
+let smartHomeA = document.createElement("div");
+let nameH12 = document.createElement("p");
+nameH12.innerText = "Smart Home Appliances >";
+nameH12.style.color = "red";
+nameH12.style.fontWeight = "700";
+smartHomeA.append(nameH12);
+Electronics.smartHomeA.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	smartHomeA.append(anch);
+});
+let camera = document.createElement("div");
+let nameH13 = document.createElement("p");
+nameH13.innerText = "Camers >";
+nameH13.style.color = "red";
+nameH13.style.fontWeight = "700";
+camera.append(nameH13);
+Electronics.camera.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	camera.append(anch);
+});
+let cameraA = document.createElement("div");
+let nameH14 = document.createElement("p");
+nameH14.innerText = "Camer Accessories >";
+nameH14.style.color = "red";
+nameH14.style.fontWeight = "700";
+cameraA.append(nameH14);
+Electronics.cameraAcc.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	cameraA.append(anch);
+});
+let featured = document.createElement("div");
+let nameH15 = document.createElement("p");
+nameH15.innerText = "Featured >";
+nameH15.style.color = "red";
+nameH15.style.fontWeight = "700";
+featured.append(nameH15);
+Electronics.featured.forEach((ele) => {
+	let anch = document.createElement("a");
+	anch.innerText = ele;
+	featured.append(anch);
+});
+
+document
+	.getElementById("electronicContainer")
+	.append(
+		mob,
+		mobacc,
+		smartW,
+		healthC,
+		lap,
+		desktop,
+		gaminga,
+		computera,
+		computerp,
+		tab,
+		speakers,
+		smartHomeA,
+		camera,
+		cameraA,
+		featured
+	);
+
+let electronicsTab = document.getElementById("electronicsSection");
+electronicsTab.addEventListener("mouseover", () => {
+	document.getElementById("electronicContainer").classList.add("vis");
+});
+electronicsTab.addEventListener("mouseout", () => {
+	document.getElementById("electronicContainer").classList.remove("vis");
+	})
+	
