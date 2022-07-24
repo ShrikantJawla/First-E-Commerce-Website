@@ -20,7 +20,6 @@ form.addEventListener("submit", (e) => {
 		}
 	});
 	if (is_true) {
-		alert("Sign in successful.");
 		nowSignIn = [];
 		nowSignIn.push(obj);
 		localStorage.setItem("remainSignIn", JSON.stringify(nowSignIn));
