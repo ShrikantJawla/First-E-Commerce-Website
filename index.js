@@ -500,14 +500,14 @@ document.querySelector("#scleftBtn").addEventListener("click", () => {
 //Here I defined when sign-in on navbar changes to name of the user:::-------sarts from here-----
 if (tempStaySignIn.length !== 0) {
 	let profileTag = document.getElementById("signInTag");
-	profileTag.innerText = "Hi " + tempStaySignIn[0].name;
-	profileTag.style.color = "red";
-	profileTag.href = "index.html";
-	let clickToSignOut = document.createElement("h4");
+	profileTag.innerText = tempStaySignIn[0].name;
+	profileTag.style.color = "white";
+	profileTag.style.backgroundColor = "inherit";
+	document.getElementById("signInTag").setAttribute("class", "nameTab");
+	profileTag.href = "#";
+	let clickToSignOut = document.createElement("a");
 	clickToSignOut.innerText = "Sign Out";
-	clickToSignOut.style.color = "blue";
-	clickToSignOut.style.cursor = "pointer";
-	document.getElementById("navProfileDiv").append(clickToSignOut);
+	document.querySelector(".logindiv").append(clickToSignOut);
 	clickToSignOut.addEventListener("click", () => {
 		deletetempStaySignIn(tempStaySignIn);
 	});
@@ -520,6 +520,22 @@ function deletetempStaySignIn(arr) {
 }
 
 //Ends here------
+
+//Login DIv JS starts here::::----------
+document.querySelector("#signInTag").addEventListener("mouseover", () => {
+	document.querySelector(".logindiv").classList.add("logindivVisible");
+
+	document.querySelector(".logindiv").addEventListener("mouseover", () => {
+	document.querySelector(".logindiv").classList.add("logindivVisible");
+	});
+	
+	document.querySelector(".logindiv").addEventListener("mouseout", () => {
+		document.querySelector(".logindiv").classList.remove("logindivVisible");
+	});
+});
+document.querySelector("#signInTag").addEventListener("mouseout", () => {
+	document.querySelector(".logindiv").classList.remove("logindivVisible");
+});
 
 let fash = document.getElementById("fashion");
 fash.addEventListener("mouseover", (e) => {
@@ -810,5 +826,4 @@ electronicsTab.addEventListener("mouseover", () => {
 });
 electronicsTab.addEventListener("mouseout", () => {
 	document.getElementById("electronicContainer").classList.remove("vis");
-	})
-	
+});

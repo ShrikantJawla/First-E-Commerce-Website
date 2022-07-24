@@ -3,7 +3,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 #navbar {
 	display: flex;
@@ -12,179 +12,227 @@
 	height: 60px;
 	align-items: center;
 	justify-content: center;
-	padding: 5px 26px;
+	padding: 0px 26px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	background-color: rgba(61, 61, 227, 0.862);
 	position: sticky;
 	top: 0px;
 	z-index: 1;
-	margin-bottom: 15px;
+	position: relative;
 }
 #navbar > div {
 	display: flex;
 	gap: 10px;
 	align-items: center;
 }
-#navbar > div:last-child{
-    gap: 40px;
+#navbar > div:last-child {
+	gap: 36px;
+	height: 100%;
 }
-#navbar >div:first-child>img{
-    height: 20px;
+#navbar > div:first-child > img {
+	height: 20px;
 }
 #navbar input {
 	width: 480px;
-    height: 36px;
-    padding-left: 12px;
+	height: 36px;
+	padding-left: 12px;
 }
-#signInTag{
-    font-size: 18px;
-    padding: 6px 34px;
-    background-color: white;
-    color:rgb(52, 52, 240);
-    text-decoration: none;
-    font-weight: bold;
+#signInTag {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+#signInTag > span {
+	font-size: 18px;
+	padding: 5px 38px;
+	background-color: white;
+	color: rgb(52, 52, 240);
+	text-decoration: none;
+	font-weight: bold;
 }
 #navbar a:not(a:first-child) {
 	color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
 }
 #nav2 + h1 {
 	text-align: center;
 	margin-top: 40px;
 	color: teal;
 }
+.nameTab {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.logindiv {
+	display: none;
+}
+.logindivVisible {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 96%;
+	right: 380px;
+	z-index: 2;
+}
+#navbar > #navProfileDiv > .logindiv > a {
+	background-color: white;
+	text-decoration: none;
+	width: 250px;
+	padding: 17px 10px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+		rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+	color: black;
+	padding-left: 15px;
+	font-size: 17px;
+	font-weight: 400;
+}
+#navbar > #navProfileDiv > .logindiv > a:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	background-color: whitesmoke;
+}
 #nav2 {
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	display: flex;
 	margin-bottom: 40px;
-	width: 95%;
-    margin:auto;
-    justify-content: space-between;
-    text-align: center;
-    gap:15px;
-    font-family: Roboto,Arial,sans-serif;
-    letter-spacing: 0;
-    position:relative;
+	width: 100%;
+	margin: auto;
+	justify-content: space-between;
+	text-align: center;
+	gap: 15px;
+	font-family: Roboto, Arial, sans-serif;
+	letter-spacing: 0;
+	position: relative;
 }
-#nav2>div{
-    width: 11%;
+#nav2 > div {
+	width: 11%;
 }
-#nav2>div:hover{
-    color:blue;
-    cursor: pointer;
+#nav2 > div:hover {
+	color: blue;
+	cursor: pointer;
 }
-#nav2 img{
-    width:50%;
-    margin-bottom:5px
+#nav2 img {
+	width: 50%;
+	margin-bottom: 5px;
 }
-.fashion{
-    display: none;
+.fashion {
+	display: none;
 }
-.visible{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width:250px;
-    padding:13px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position:absolute;
-    top:85%;
-    left: 20%;
-    z-index: 2;
-    background-color: white;
+.visible {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	width: 250px;
+	padding: 13px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	top: 85%;
+	left: 20%;
+	z-index: 2;
+	background-color: white;
 }
-.btn{
-    width: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
-    border: none;
-    background-color: white;
-    font-family: Roboto,Arial,sans-serif;
-    padding: 13px 8px;
-    cursor: pointer;
+.btn {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	border: none;
+	background-color: white;
+	font-family: Roboto, Arial, sans-serif;
+	padding: 13px 8px;
+	cursor: pointer;
 }
-.btn:hover{
-    color:blue;
-    background-color: rgba(240, 248, 255, 0.592);
+.btn:hover {
+	color: blue;
+	background-color: rgba(240, 248, 255, 0.592);
 }
-.btn>span{
-    float: right;
+.btn > span {
+	float: right;
 }
-.btnpop1{
-    display: none;
+.btnpop1 {
+	display: none;
 }
-.secpop{
-    width: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
-    border: none;
-    background-color: white;
-    font-family: Roboto,Arial,sans-serif;
-    padding: 13px 8px;
-    cursor: pointer;
+.secpop {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	border: none;
+	background-color: white;
+	font-family: Roboto, Arial, sans-serif;
+	padding: 13px 8px;
+	cursor: pointer;
 }
-.secpop:hover{
-    color:blue;
-    background-color: rgba(240, 248, 255, 0.592);
+.secpop:hover {
+	color: blue;
+	background-color: rgba(240, 248, 255, 0.592);
 }
-.btnpop2{
-    display: none;
-} 
-#text{
-    font-size: 13px;
-    color: black;
+.btnpop2 {
+	display: none;
 }
-.btnpop3{
-    display: none;
+#text {
+	font-size: 13px;
+	color: black;
 }
-.visible1{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width:250px;
-    padding:13px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position:absolute;
-    top:0%;
-    left:100%;
-    z-index: 2;
-    background-color: white;
+.btnpop3 {
+	display: none;
 }
-#electronicContainer{
-    display: none;
+.visible1 {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	width: 250px;
+	padding: 13px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	top: 0%;
+	left: 100%;
+	z-index: 2;
+	background-color: white;
 }
-#electronicsSection>.vis{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 15px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: absolute;
-    top:98%;
-    left: 4%;
-    z-index: 3;
-    width: 90%;
-    background-color: white;
-    padding-bottom: 25px;
+#electronicContainer {
+	display: none;
 }
-#electronicContainer>div{
-    /* padding-bottom: 25px; */
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
+#electronicsSection > .vis {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 15px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 98%;
+	left: 4%;
+	z-index: 3;
+	width: 90%;
+	background-color: white;
+	padding-bottom: 25px;
 }
-#electronicContainer>div>p, #electronicContainer>div>a{
-    width: 100%;
-    padding:5px 20px;
-    font-size: 13px;
-    text-align: left;
-    color: black;
+#electronicContainer > div {
+	/* padding-bottom: 25px; */
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
 }
-#electronicContainer>div>p, #electronicContainer>div>a:hover{
-    color: blue;
+#electronicContainer > div > p,
+#electronicContainer > div > a {
+	width: 100%;
+	padding: 5px 20px;
+	font-size: 13px;
+	text-align: left;
+	color: black;
+}
+#electronicContainer > div > p,
+#electronicContainer > div > a:hover {
+	color: blue;
 }
