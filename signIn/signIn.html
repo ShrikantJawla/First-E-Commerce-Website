@@ -19,10 +19,10 @@
                 <h2>Log in</h2>
                 <form action="">
                     <label for="">Email</label>
-                    <input id="email" type="email" placeholder="Enter email">
+                    <input id="email" type="email" oninput="submitEnable()" required>
                     <label for="">Password</label>
-                    <input type="password" name="" id="pass" placeholder="Enter password">
-                    <input id="sub" type="submit" value="Sign in">
+                    <input type="password" name="" id="pass" oninput="submitEnable()" required>
+                    <input id="sub" type="submit" value="Sign in" disabled>
                     <p>Din't have an account? <a href="../signUp/signUp.html" target="_blank">Sign Up</a></p>
                 </form>
             </div>

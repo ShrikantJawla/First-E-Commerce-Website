@@ -31,10 +31,14 @@ p {
 	text-align: center;
 }
 #sub {
+	cursor: pointer;
 	width: 100%;
 	border-width: 1px;
 	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 	--tw-border-opacity: 1;
+}
+#sub:disabled{
+	cursor:not-allowed;
 }
 @media all and (min-width:320px) and (max-width:480px){
     #container {

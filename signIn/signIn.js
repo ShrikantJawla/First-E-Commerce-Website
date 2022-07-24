@@ -8,12 +8,6 @@ let nowSignIn = JSON.parse(localStorage.getItem("remainSignIn")) || [];
 let form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
-	if (form.email.value === "" || form.pass.value === "") {
-		alert("Please fill all the inputs!!");
-		form.email.value = "";
-		form.pass.value = "";
-		return;
-	}
 	let obj = {
 		email: form.email.value,
 		pass: form.pass.value
@@ -37,3 +31,11 @@ form.addEventListener("submit", (e) => {
 		form.pass.value = "";
 	}
 });
+
+function submitEnable(){
+	if (form.email.value !== "" && form.pass.value !== "") {
+		document.getElementById("sub").disabled = false;
+	}else{
+		document.getElementById("sub").disabled = true;
+	}
+}

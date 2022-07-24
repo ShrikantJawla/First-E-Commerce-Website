@@ -10,14 +10,6 @@ form.addEventListener("submit", (e) => {
 		email: form.email.value,
 		pass: form.pass.value
 	};
-	if (
-		form.name.value === "" ||
-		form.email.value === "" ||
-		form.pass.value === ""
-	) {
-		alert("Please fill all inputs!!");
-		return;
-	}
 	let is_true = false;
 	data.forEach((ele) => {
 		if (ele.name === obj.name || ele.email === obj.email) {
@@ -53,3 +45,15 @@ form.addEventListener("submit", (e) => {
 	form.pass.value = "";
 	window.location.href = "../signIn/signIn.html";
 });
+
+function submitEnable() {
+	if (
+		form.name.value !== "" &&
+		form.email.value !== "" &&
+		form.pass.value !== ""
+	) {
+		document.getElementById("sub").disabled = false;
+	} else {
+		document.getElementById("sub").disabled = true;
+	}
+}
